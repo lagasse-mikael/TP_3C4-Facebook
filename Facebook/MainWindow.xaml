@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Facebook"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Debug Window" Height="450" Width="800" FontFamily="MS PGothic">
     <Grid>
-        
+        <StackPanel>
+            <WrapPanel>
+                <Grid>
+                    <Image x:Name="banner" Width="300" HorizontalAlignment="Left"/>
+                    <Image x:Name="profile" Width="70" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+                <TextBlock x:Name="currentUser" FontSize="27" TextWrapping="Wrap"></TextBlock>
+            </WrapPanel>
+            <TextBlock x:Name="windowText" FontSize="27"></TextBlock>
+        </StackPanel>
     </Grid>
 </Window>
