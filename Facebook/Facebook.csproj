@@ -9,13 +9,90 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\banner.png" />
-    <None Remove="Images\profile.png" />
+    <None Remove="Icons\angry.png" />
+    <None Remove="Icons\like.png" />
+    <None Remove="Icons\love.png" />
+    <None Remove="Icons\sad.png" />
+    <None Remove="Offers\Cars\car1.jpg" />
+    <None Remove="Offers\Cars\car10.jpg" />
+    <None Remove="Offers\Cars\car11.jpg" />
+    <None Remove="Offers\Cars\car12.jpg" />
+    <None Remove="Offers\Cars\car13.jpg" />
+    <None Remove="Offers\Cars\car14.jpg" />
+    <None Remove="Offers\Cars\car15.jpg" />
+    <None Remove="Offers\Cars\car16.jpg" />
+    <None Remove="Offers\Cars\car2.jpg" />
+    <None Remove="Offers\Cars\car3.jpg" />
+    <None Remove="Offers\Cars\car4.jpg" />
+    <None Remove="Offers\Cars\car5.jpg" />
+    <None Remove="Offers\Cars\car6.jpg" />
+    <None Remove="Offers\Cars\car7.jpg" />
+    <None Remove="Offers\Cars\car8.jpg" />
+    <None Remove="Offers\Cars\car9.jpg" />
+    <None Remove="Posts\post1.jpg" />
+    <None Remove="Posts\post10.jpg" />
+    <None Remove="Posts\post11.jpg" />
+    <None Remove="Posts\post12.jpg" />
+    <None Remove="Posts\post2.jpg" />
+    <None Remove="Posts\post3.jpg" />
+    <None Remove="Posts\post4.jpg" />
+    <None Remove="Posts\post5.jpg" />
+    <None Remove="Posts\post6.jpg" />
+    <None Remove="Posts\post7.jpg" />
+    <None Remove="Posts\post8.jpg" />
+    <None Remove="Posts\post9.jpg" />
+    <None Remove="Users\user1.jpg" />
+    <None Remove="Users\user2.jpg" />
+    <None Remove="Users\user3.jpg" />
+    <None Remove="Users\user4.jpg" />
+    <None Remove="Users\user5.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\banner.png" />
-    <Resource Include="Images\profile.png" />
+    <Folder Include="Offers\Appliances\Fridges\" />
+    <Folder Include="Offers\Appliances\Stoves\" />
+    <Folder Include="Offers\Appliances\Washer\" />
+    <Folder Include="Offers\PropertyRentals\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\angry.png" />
+    <Resource Include="Icons\like.png" />
+    <Resource Include="Icons\love.png" />
+    <Resource Include="Icons\sad.png" />
+    <Resource Include="Offers\Cars\car1.jpg" />
+    <Resource Include="Offers\Cars\car10.jpg" />
+    <Resource Include="Offers\Cars\car11.jpg" />
+    <Resource Include="Offers\Cars\car12.jpg" />
+    <Resource Include="Offers\Cars\car13.jpg" />
+    <Resource Include="Offers\Cars\car14.jpg" />
+    <Resource Include="Offers\Cars\car15.jpg" />
+    <Resource Include="Offers\Cars\car16.jpg" />
+    <Resource Include="Offers\Cars\car2.jpg" />
+    <Resource Include="Offers\Cars\car3.jpg" />
+    <Resource Include="Offers\Cars\car4.jpg" />
+    <Resource Include="Offers\Cars\car5.jpg" />
+    <Resource Include="Offers\Cars\car6.jpg" />
+    <Resource Include="Offers\Cars\car7.jpg" />
+    <Resource Include="Offers\Cars\car8.jpg" />
+    <Resource Include="Offers\Cars\car9.jpg" />
+    <Resource Include="Posts\post1.jpg" />
+    <Resource Include="Posts\post10.jpg" />
+    <Resource Include="Posts\post11.jpg" />
+    <Resource Include="Posts\post12.jpg" />
+    <Resource Include="Posts\post2.jpg" />
+    <Resource Include="Posts\post3.jpg" />
+    <Resource Include="Posts\post4.jpg" />
+    <Resource Include="Posts\post5.jpg" />
+    <Resource Include="Posts\post6.jpg" />
+    <Resource Include="Posts\post7.jpg" />
+    <Resource Include="Posts\post8.jpg" />
+    <Resource Include="Posts\post9.jpg" />
+    <Resource Include="Users\user1.jpg" />
+    <Resource Include="Users\user2.jpg" />
+    <Resource Include="Users\user3.jpg" />
+    <Resource Include="Users\user4.jpg" />
+    <Resource Include="Users\user5.jpg" />
   </ItemGroup>
 
 </Project>
