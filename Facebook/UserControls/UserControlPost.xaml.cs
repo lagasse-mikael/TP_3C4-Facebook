@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace Facebook.UserControls
 {
     /// <summary>
-    /// Interaction logic for Post.xaml
+    /// Interaction logic for UserControlPost.xaml
     /// </summary>
-    public partial class Post : UserControl
+    public partial class UserControlPost : UserControl
     {
-        public Post()
+        public Post currentPost;
+        public MainWall currentWall;
+        public UserControlPost(Post postToShow, MainWall mainWall)
         {
             InitializeComponent();
+
+            currentPost = postToShow;
+            currentWall = mainWall;
         }
     }
 }

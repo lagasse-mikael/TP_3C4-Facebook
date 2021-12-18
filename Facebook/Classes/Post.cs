@@ -16,7 +16,27 @@ namespace Facebook
     }
     public class Post
     {
-        public User Owner { get; init; }
+        public string OwnerEmail
+        {
+            get;
+            init;
+        }
+
+        public User OwnerUser
+        {
+            get
+            {
+                User userAssociated;
+                App.Current.Users.TryGetValue(this.OwnerEmail, out userAssociated);
+
+                if (userAssociated != null)
+                    return userAssociated;
+                else
+                    throw new Exception("Cette email ne correspond pas a aucun utilisateur");
+            }
+            private set { this.OwnerUser = value; }
+        }
+
         public string Title { get; init; }
         public string Description { get; init; }
         public Uri Image { get; init; }
@@ -29,7 +49,7 @@ namespace Facebook
             get => TargetEmail;
             init
             {
-                if(Visibility == VisibilityPost.FriendsExcept)
+                if (Visibility == VisibilityPost.FriendsExcept)
                 {
                     foreach (string email in value)
                     {
@@ -63,6 +83,6 @@ namespace Facebook
         // https://stackoverflow.com/questions/55651059/how-to-determine-if-user-control-is-shown-or-not-on-winforms
         public List<string> asBeenSeenBy { get; private set; }
 
-         
+
     }
 }
