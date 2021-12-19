@@ -44,7 +44,7 @@ namespace Facebook
         {
             return this.GroupWall.Posts.Where(post =>
             {
-                double dateDiff = (post.Date - new DateTime()).TotalDays;
+                double dateDiff = (DateTime.Today - post.Date).TotalDays;
                 return dateDiff <= 7 && dateDiff >= -7;
             }).OrderBy(post => post.Date);
         }

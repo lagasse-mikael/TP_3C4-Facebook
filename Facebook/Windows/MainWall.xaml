@@ -67,11 +67,14 @@
                 </StackPanel>
 
                 <TextBlock Foreground="White" FontSize="20">View posts of</TextBlock>
-                <ComboBox x:Name="ComboBoxPostOf" />
+                <ComboBox x:Name="ComboBoxPostOf" SelectedIndex="0">
+                    <ComboBoxItem>All users</ComboBoxItem>
+                    <ComboBoxItem>Friends</ComboBoxItem>
+                </ComboBox>
 
                 <TextBlock Foreground="White" FontSize="20">Sort by</TextBlock>
-                <RadioButton x:Name="RadioButtonDate">Date (newest first)</RadioButton>
-                <RadioButton x:Name="RadioButtonPopularity">Popularity (highest first)</RadioButton>
+                <RadioButton x:Name="RadioButtonDate" Checked="changeOrder">Date (newest first)</RadioButton>
+                <RadioButton x:Name="RadioButtonPopularity" Checked="changeOrder">Popularity (highest first)</RadioButton>
 
 
 

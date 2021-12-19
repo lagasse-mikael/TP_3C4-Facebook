@@ -10,38 +10,38 @@
         <StackPanel>
             <!--User infos-->
             <WrapPanel>
-                <Image Source="../Users/user1.jpg" Width="50" Margin="10"/>
+                <Image x:Name="userImage" Source="../Users/user1.jpg" Width="50" Margin="10"/>
                 <StackPanel VerticalAlignment="Center">
                     <Label x:Name="userName" Foreground="White" FontWeight="Bold" FontSize="16">Mikael Lagasse</Label>
-                    <Label Foreground="White" FontSize="12" Margin="0 -5">10 days</Label>
+                    <Label x:Name="daysSincePost" Foreground="White" FontSize="12" Margin="0 -5">10 days</Label>
                 </StackPanel>
             </WrapPanel>
             <!--Image du post-->
-            <Image Source="../Posts/post1.jpg" Stretch="UniformToFill"/>
+            <Image x:Name="postPicture" Source="../Posts/post1.jpg" Stretch="UniformToFill"/>
             <!--Les reactions-->
             <WrapPanel VerticalAlignment="Center">
                 <Button Background="#FF2B2B2B" Margin="10" BorderThickness="0">
                     <Image Source="../Icons/like.png" Width="30"/>
                 </Button>
-                <Label Foreground="White" VerticalContentAlignment="Center" FontSize="15">0</Label>
+                <Label x:Name="postLikes" Foreground="White" VerticalContentAlignment="Center" FontSize="15">0</Label>
                 <Button Background="#FF2B2B2B" Margin="10" BorderThickness="0">
                     <Image Source="../Icons/love.png" Width="30"/>
                 </Button>
-                <Label Foreground="White" VerticalContentAlignment="Center" FontSize="15">0</Label>
+                <Label x:Name="postLove" Foreground="White" VerticalContentAlignment="Center" FontSize="15">0</Label>
                 <Button Background="#FF2B2B2B" Margin="10" BorderThickness="0">
                     <Image Source="../Icons/angry.png" Width="30"/>
                 </Button>
-                <Label Foreground="White" VerticalContentAlignment="Center" FontSize="15">0</Label>
+                <Label x:Name="postAngry" Foreground="White" VerticalContentAlignment="Center" FontSize="15">0</Label>
                 <Button Background="#FF2B2B2B" Margin="10" BorderThickness="0">
                     <Image Source="../Icons/sad.png" Width="30"/>
                 </Button>
-                <Label Foreground="White" VerticalContentAlignment="Center" FontSize="15">0</Label>
+                <Label x:Name="postSad" Foreground="White" VerticalContentAlignment="Center" FontSize="15">0</Label>
             </WrapPanel>
             <!--Contenu d'un post-->
             <Border BorderBrush="#FF404040" BorderThickness="2" CornerRadius="5" Margin="5">
                 <StackPanel>
-                    <Label FontSize="21" FontWeight="Bold" Foreground="White">Secret painting</Label>
-                    <Label Foreground="Gray" Margin="0 -7 0 0">November 29 at 5:30pm</Label>
+                    <Label x:Name="postTitle" FontSize="21" FontWeight="Bold" Foreground="White">Secret painting</Label>
+                    <Label x:Name="postDateTime" Foreground="Gray" Margin="0 -7 0 0">November 29 at 5:30pm</Label>
                     <TextBlock x:Name="postDescription" Foreground="White" Margin="7 10" TextAlignment="Justify" TextWrapping="Wrap">Testing stuff</TextBlock>
                     <!--Mettre le contenu d'un post ici!-->
                 </StackPanel>
