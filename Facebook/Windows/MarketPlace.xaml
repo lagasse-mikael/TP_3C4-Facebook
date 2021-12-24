@@ -64,7 +64,7 @@
                 </ComboBox>
 
                 <TextBlock Foreground="White" FontSize="20">Sort By</TextBlock>
-                <RadioButton x:Name="RadioButtonDate">Date (newest first)</RadioButton>
+                <RadioButton x:Name="RadioButtonDate" Checked="changeOrder">Date (newest first)</RadioButton>
                 <RadioButton x:Name="RadioButtonPrice">Price (Lowest first)</RadioButton>
 
 
