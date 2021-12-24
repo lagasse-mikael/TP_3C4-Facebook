@@ -57,7 +57,11 @@
             <StackPanel Margin="10 5">
 
                 <TextBlock Foreground="White" FontSize="20">Category</TextBlock>
-                <ComboBox x:Name="ComboBoxCategory" />
+                <ComboBox x:Name="ComboBoxCategory">
+                    <ComboBoxItem>Cars</ComboBoxItem>
+                    <ComboBoxItem>Appliances</ComboBoxItem>
+                    <ComboBoxItem>Property Rentals</ComboBoxItem>
+                </ComboBox>
 
                 <TextBlock Foreground="White" FontSize="20">Sort By</TextBlock>
                 <RadioButton x:Name="RadioButtonDate">Date (newest first)</RadioButton>
@@ -77,9 +81,24 @@
                     <TextBox Background="#FF494B4D" Grid.Column="2" x:Name="MaxPrice"></TextBox>
                 </Grid>
                 <TextBlock Foreground="White" FontSize="15">Marker</TextBlock>
-                <ComboBox x:Name="ComboBoxMaker" />
+                <ComboBox x:Name="ComboBoxMaker">
+                    <ComboBoxItem>All</ComboBoxItem>
+                    <ComboBoxItem>Honda</ComboBoxItem>
+                    <ComboBoxItem>Toyota</ComboBoxItem>
+                    <ComboBoxItem>Nissan</ComboBoxItem>
+                </ComboBox>
                 <TextBlock Foreground="White" FontSize="15">Brand</TextBlock>
-                <ComboBox x:Name="ComboBoxBrand" />
+                <ComboBox x:Name="ComboBoxBrand">
+                    <ComboBoxItem>All</ComboBoxItem>
+                    <ComboBoxItem>Altima</ComboBoxItem>
+                    <ComboBoxItem>Leaf</ComboBoxItem>
+                    <ComboBoxItem>Accord</ComboBoxItem>
+                    <ComboBoxItem>Civic</ComboBoxItem>
+                    <ComboBoxItem>Camry</ComboBoxItem>
+                    <ComboBoxItem>Corrola</ComboBoxItem>
+                    <ComboBoxItem>Fit</ComboBoxItem>
+                    <ComboBoxItem>Infiniti</ComboBoxItem>
+                </ComboBox>
 
                 <TextBlock Foreground="White" FontSize="15">Year</TextBlock>
                 <Grid>
@@ -89,7 +108,7 @@
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
-                    <TextBox Background="#FF494B4D" Grid.Column="0" x:Name="MinYear"></TextBox>
+                <TextBox Background="#FF494B4D" Grid.Column="0" x:Name="MinYear" TextChanged="MinYear_TextChanged"></TextBox>
                     <TextBlock Grid.Column="1" Margin="10 0" VerticalAlignment="Center" Foreground="White">to</TextBlock>
                     <TextBox Background="#FF494B4D" Grid.Column="2" x:Name="MaxYear"></TextBox>
                 </Grid>

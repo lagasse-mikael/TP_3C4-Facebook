@@ -21,9 +21,17 @@ namespace Facebook.Windows
     {
         public MarketPlace()
         {
+
+
             InitializeComponent();
         }
 
-        
+        private void MinYear_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (true)
+            {
+
+            }
+        }
     }
 }
