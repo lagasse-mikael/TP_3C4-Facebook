@@ -23,15 +23,11 @@ namespace Facebook.Windows
         {
 
 
+
+
             InitializeComponent();
         }
 
-        private void MinYear_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (true)
-            {
-
-            }
-        }
+       
     }
 }
